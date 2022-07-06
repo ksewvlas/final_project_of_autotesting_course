@@ -9,7 +9,6 @@ class BasketPage(BasePage):
 
     def should_be_basket_url(self):
         basket_url = self.browser.current_url
-        print(basket_url)
         assert 'basket' in basket_url, 'This is not basket page'
 
     def should_be_basket_dir(self):
